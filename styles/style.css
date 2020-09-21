@@ -29,8 +29,20 @@ h2 {
     flex-direction: column;
 }
 
+.f-basis-30-percent {
+    flex-basis: 30%;
+}
+
+.f-basis-45-percent {
+    flex-basis: 45%;
+}
+
 .space-between {
     justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .center-align-items {
@@ -43,6 +55,10 @@ h2 {
 
 .bg-white {
     background:#fff;
+}
+
+.bg-light-gray {
+    background: #f7f7f7;
 }
 
 .bg-transparent {
@@ -63,6 +79,10 @@ h2 {
     height:60px;
 }
 
+.height-200 {
+    height: 200px;
+}
+
 .height-250 {
     height:250px;
 }
@@ -73,6 +93,18 @@ h2 {
 
 .mr-right-15 {
     margin-right:15px;
+}
+
+.mr-right-30 {
+    margin-right:30px;
+}
+
+.mr-right-60 {
+    margin-right:60px;
+}
+
+.mr-right-90 {
+    margin-right:90px;
 }
 
 .mr-top-60 {
@@ -141,12 +173,8 @@ h2 {
     color:inherit;
 }
 
-#first-block {
+#first-container {
     background-image:url(../images/banner.png);
     background-size: cover;
     background-position:center center;
-}
-
-#first-container {
-   
 }
