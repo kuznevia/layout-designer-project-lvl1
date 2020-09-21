@@ -25,7 +25,7 @@
                 <img src="images/logo.svg" alt="logo" class="height-250"></img>
                 <h1>ЖК «Лунное море»</h1>
                 <p>Место, откуда не хочется улетать</p>
-                <input id="book" name="book" type="button" value="Забронировать" class="pad-left-right-10 pad-top-bot-15 color-white fs-1em fw-bold b-1-solid-white b-radius-10 bg-transparent">
+                <a href="#third-container"><input id="book" name="book" type="button" value="Забронировать" class="pad-left-right-10 pad-top-bot-15 width-200 color-white fs-1em fw-bold b-1-solid-white b-radius-10 bg-transparent"></a>
             </section>
         </div>  
         <div id="second-container" class="flex-column center-align-items justify-center width-100-percent">
@@ -69,6 +69,40 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div id="third-container" class="flex-column center-align-items justify-center width-100-percent bg-light-gray">
+            <form action="#" class="flex-column pad-top-bot-60 width-50-percen">
+                <h2 class="align-self-center">Оставьте заявку сегодня!</h2>
+                <fieldset class="mr-top-bot-15 fw-bold border-2-solid-light-green">
+                    <legend class="color-light-green">Параметры квартиры</legend>
+                    <div class="flex flex-wrap space-between">
+                        <label for="rooms" class="f-basis-45-percent mr-top-bot-10">Количество комнат:</label>
+                        <select name="rooms" id="rooms" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <label for="finishing" class="f-basis-45-percent mr-top-bot-10">Отделка:</label>
+                        <select name="finishing" id="finishing" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                            <option>Без отделки</option>
+                            <option>С отделкой</option>
+                            <option>С частичной отделкой</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="mr-top-bot-15 fw-bold border-2-solid-light-green">
+                    <legend class="color-light-green">Контактная информация</legend>
+                    <div class="flex flex-wrap space-between">
+                        <label for="name" class="f-basis-45-percent mr-top-bot-10">Имя:</label>
+                        <input type="text" id="name" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                        <label for="tel" class="f-basis-45-percent mr-top-bot-10">Телефон:</label>
+                        <input type="tel" id="tel" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                        <label for="email" class="f-basis-45-percent mr-top-bot-10">Email:</label>
+                        <input type="email" id="email" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                    </div>
+                </fieldset>
+                <input id="send" name="send" type="button" value="Отправить" class="pad-left-right-10 pad-top-bot-15 width-200 color-light-green fs-1em fw-bold border-2-solid-light-green b-radius-10 bg-transparent">
+            </form>
         </div>
     </main>
     <footer>Footer</footer>
