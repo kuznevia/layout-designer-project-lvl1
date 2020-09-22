@@ -20,6 +20,10 @@ h2 {
     margin-bottom: 0.5em;
 }
 
+input {
+    border:1px solid black;
+}
+
 .flex {
     display: flex;
 }
@@ -63,6 +67,10 @@ h2 {
 
 .bg-white {
     background:#fff;
+}
+
+.bg-black {
+    background: #303846;
 }
 
 .bg-light-gray {
@@ -150,7 +158,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-.pad-top-bot-5 {
+.sop-bot-5 {
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -207,7 +215,9 @@ h2 {
     color:#000;
 }
 
-
+.fw-normal {
+    font-weight: normal;
+}
 
 .fw-bold {
     font-weight: bold;
