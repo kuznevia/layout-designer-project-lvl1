@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="flex space-between center-align-items height-60 pad-top-bot-5 pad-left-right-20 border-box fw-bold fixed bg-white">
+    <header class="header fw-bold bg-white">
         <div class="flex center-align-items">
-            <img src="images/logo.svg" alt="logo" class="height-40 mr-right-15"></img>
+            <img src="images/logo.svg" alt="logo" class="height-40 mr-right-15">
             <span class="logo-name">Лунное море</span>
         </div>
-        <nav class="navbar">
-            <a href="#first-section-second-container" class="nav-link mr-right-15 no-decoration">Преимущества</a>
-            <a href="#second-section-second-container" class="nav-link mr-right-15 no-decoration">О ЖК "Лунное Море"</a>
-            <a href="#third-section-second-container" class="nav-link mr-right-15 no-decoration">Место для отдыха</a>
+        <nav>
+            <a href="#advatages" class="nav-link no-decor">Преимущества</a>
+            <a href="#about" class="nav-link no-decor">О ЖК "Лунное Море"</a>
+            <a href="#rest-places" class="no-decor">Место для отдыха</a>
         </nav>
     </header>
     <main class='mr-top-60'>
-        <div id="first-container" class="flex center-align-items justify-center height-600 width-100-percent">
-            <section id="first-section-first-container" class="flex-column center-align-items justify-center pad-top-bot-60 width-1000 color-white">
-                <img src="images/logo.svg" alt="logo" class="height-250"></img>
+        <div class="flex center-align-items justify-center height-600 width-100-percent bg-moon">
+            <section class="flex-column center-align-items justify-center pad-top-bot-60 width-1000 color-white">
+                <img src="images/logo.svg" alt="logo" class="height-250">
                 <h1>ЖК «Лунное море»</h1>
                 <p>Место, откуда не хочется улетать</p>
-                <a href="#third-container"><input id="book" name="book" type="button" value="Забронировать" class="pad-left-right-10 pad-top-bot-15 width-200 color-white fs-1em fw-bold b-1-solid-white b-radius-10 bg-transparent"></a>
+                <a href="#order"><input id="book" name="book" type="button" value="Забронировать" class="pad-left-right-10 pad-top-bot-15 width-200 color-white fs-1em fw-bold b-1-solid-white b-radius-10 bg-transparent"></a>
             </section>
         </div>  
-        <div id="second-container" class="flex-column center-align-items justify-center width-100-percent">
-            <section id="first-section-second-container" class="flex justify-center width-100-percent">
+        <div class="flex-column center-align-items justify-center width-100-percent">
+            <section id="advatages"  class="flex justify-center width-100-percent">
                 <div class='flex space-between width-1000'>
                     <div class="f-basis-30-percent pad-top-bot-60">
                         <h2>Уникальный вид</h2>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </section>
-            <section id="second-section-second-container" class="flex justify-center width-100-percent bg-light-gray">
+            <section id="about"  class="flex justify-center width-100-percent bg-light-gray">
                 <div class='flex space-around width-1000'>
                     <div class="f-basis-45-percent pad-top-bot-60 width-1000">
                         <h2>О ЖК «Лунное море»</h2>
@@ -53,14 +53,14 @@
                         <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                     </div>
                     <div class="f-basis-30-percent pad-top-bot-60 width-1000">
-                        <img src="images/moon-1.jpg" alt="moon-1" class="height-200"></img>
+                        <img src="images/moon-1.jpg" alt="moon-1" class="height-200">
                     </div>
                 </div>
             </section>
-            <section id="third-section-second-container" class="flex justify-center width-100-percent">
+            <section id="rest-places" class="flex justify-center width-100-percent">
                 <div class='flex space-around width-1000'>
                     <div class="f-basis-30-percent pad-top-bot-60 width-1000">
-                        <img src="images/moon-2.jpg" alt="moon-1" class="height-200"></img>
+                        <img src="images/moon-2.jpg" alt="moon-1" class="height-200">
                     </div>
                     <div class="f-basis-45-percent pad-top-bot-60 width-1000">
                         <h2>Места для отдыха</h2>
@@ -70,20 +70,20 @@
                 </div>
             </section>
         </div>
-        <div id="third-container" class="flex-column center-align-items justify-center width-100-percent bg-light-gray">
-            <form action="#" class="flex-column pad-top-bot-60 width-50-percen">
+        <div id ="order" class="order bg-light-gray">
+            <form action="#" class="order-form">
                 <h2 class="align-self-center">Оставьте заявку сегодня!</h2>
                 <fieldset class="mr-top-bot-15 fw-bold border-2-solid-light-green">
                     <legend class="color-light-green">Параметры квартиры</legend>
-                    <div class="flex flex-wrap space-between">
-                        <label for="rooms" class="f-basis-45-percent mr-top-bot-10">Количество комнат:</label>
-                        <select name="rooms" id="rooms" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                    <div class="order-form-fields">
+                        <label for="rooms" class="order-form-fields-labels">Количество комнат:</label>
+                        <select name="rooms" id="rooms" class="order-form-fields-labels b-radius-5">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                         </select>
-                        <label for="finishing" class="f-basis-45-percent mr-top-bot-10">Отделка:</label>
-                        <select name="finishing" id="finishing" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                        <label for="finishing" class="order-form-fields-labels">Отделка:</label>
+                        <select name="finishing" id="finishing" class="order-form-fields-labels b-radius-5">
                             <option>Без отделки</option>
                             <option>С отделкой</option>
                             <option>С частичной отделкой</option>
@@ -92,13 +92,13 @@
                 </fieldset>
                 <fieldset class="mr-top-bot-15 fw-bold border-2-solid-light-green">
                     <legend class="color-light-green">Контактная информация</legend>
-                    <div class="flex flex-wrap space-between">
-                        <label for="name" class="f-basis-45-percent mr-top-bot-10">Имя:</label>
-                        <input type="text" id="name" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
-                        <label for="tel" class="f-basis-45-percent mr-top-bot-10">Телефон:</label>
-                        <input type="tel" id="tel" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
-                        <label for="email" class="f-basis-45-percent mr-top-bot-10">Email:</label>
-                        <input type="email" id="email" class="f-basis-45-percent mr-top-bot-10 b-radius-5">
+                    <div class="order-form-fields">
+                        <label for="name" class="order-form-fields-labels">Имя:</label>
+                        <input type="text" id="name" class="order-form-fields-labels b-radius-5">
+                        <label for="tel" class="order-form-fields-labels">Телефон:</label>
+                        <input type="tel" id="tel" class="order-form-fields-labels b-radius-5">
+                        <label for="email" class="order-form-fields-labels">Email:</label>
+                        <input type="email" id="email" class="order-form-fields-labels b-radius-5">
                     </div>
                 </fieldset>
                 <input id="send" name="send" type="button" value="Отправить" class="pad-left-right-10 pad-top-bot-15 width-200 color-light-green fs-1em fw-bold border-2-solid-light-green b-radius-10 bg-transparent">
@@ -107,7 +107,7 @@
     </main>
     <footer class="flex space-around center-align-item pad-top-bot-60 bg-black color-white fw-bold">
         <div class="flex flex-wrap center-align-items">
-            <img src="images/logo.svg" alt="logo" class="height-40 mr-right-15"></img>
+            <img src="images/logo.svg" alt="logo" class="height-40 mr-right-15">
             <span class="logo-name">Лунное море</span>
             <small class="f-basis-45-percent fw-normal">&copy; 2032 год</small>
         </div>
