@@ -36,6 +36,11 @@ input {
     padding:5px 20px 5px 20px;
 }
 
+.container {
+    display: flex;
+    width: 1000px;
+}
+
 .order {
     display: flex;
     flex-direction: column;
@@ -62,6 +67,26 @@ input {
     flex-basis: 45%;
     margin-top:10px;
     margin-bottom:10px;
+}
+
+.btn {
+    padding: 15px 10px 15px 10px;
+    width:200px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    background: transparent;
+    text-align: center;
+}
+
+.btn-green {
+    border:2px solid #09d3ac;
+    color:#09d3ac;
+}
+
+.btn-white {
+    border:1px solid white;
+    color:white;
 }
 
 .nav-link {
