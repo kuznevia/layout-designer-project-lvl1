@@ -1,3 +1,11 @@
+:root {
+    --header-height:60px;
+    --light:#fff;
+    --gray:#f7f7f7;
+    --dark:#303846;
+    --colorful: #09d3ac;
+}
+
 body {
     font-family: sans-serif;
     font-size: 16px;
@@ -5,7 +13,6 @@ body {
     line-height: 1.5;
     margin:0;
     padding:0;
-    
 }
 
 h1 {
@@ -25,20 +32,25 @@ input {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    height: 60px;
+    height: var(--header-height);
     padding:5px 20px 5px 20px;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .container {
     display: flex;
     width: 1000px;
+    padding-top:60px;
+    padding-bottom:60px;
 }
 
 .order {
@@ -70,8 +82,7 @@ input {
 }
 
 .btn {
-    padding: 15px 10px 15px 10px;
-    width:200px;
+    padding: 10px 20px 10px 20px;
     font-size: 1em;
     font-weight: bold;
     border-radius: 10px;
@@ -79,14 +90,14 @@ input {
     text-align: center;
 }
 
-.btn-green {
-    border:2px solid #09d3ac;
-    color:#09d3ac;
+.btn-colorful {
+    border:2px solid var(--colorful);
+    color:var(--colorful);
 }
 
-.btn-white {
-    border:1px solid white;
-    color:white;
+.btn-light {
+    border:1px solid var(--light);
+    color:var(--light);
 }
 
 .nav-link {
@@ -135,21 +146,26 @@ input {
     align-self: center;
 }
 
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
 .justify-center {
     justify-content: center;
 }
 
-.bg-white {
-    background:#fff;
+.bg-light {
+    background:var(--light);
 }
 
-.bg-black {
-    background: #303846;
+.bg-gray {
+    background:var(--gray);
 }
 
-.bg-light-gray {
-    background: #f7f7f7;
+.bg-dark {
+    background:var(--dark)
 }
+
 
 .bg-transparent {
     background:transparent;
@@ -213,8 +229,8 @@ input {
     margin-right:90px;
 }
 
-.mr-top-60 {
-    margin-top: 60px;
+.mr-top-header-height {
+    margin-top: var(--header-height);
 }
 
 .mr-top-bot-5 {
@@ -257,16 +273,16 @@ input {
     padding-left: 20px;
 }
 
+.no-padding {
+    padding:0;
+}
+
 .border-box {
     box-sizing: border-box;
 }
 
-.b-1-solid-white {
-    border:1px solid white;
-}
-
-.border-2-solid-light-green {
-    border:2px solid #09d3ac;
+.border-2-solid-colorful {
+    border:2px solid var(--colorful);
 }
 
 .b-radius-5 {
@@ -277,16 +293,12 @@ input {
     border-radius: 10px;
 }
 
-.color-white {
-    color:#fff;
+.color-light {
+    color:var(--light)
 }
 
-.color-light-green {
-    color:#09d3ac;
-}
-
-.color-black {
-    color:#000;
+.color-colorful {
+    color:var(--colorful)
 }
 
 .fw-normal {
