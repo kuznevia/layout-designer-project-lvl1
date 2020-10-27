@@ -101,6 +101,10 @@ input {
     color:var(--light);
 }
 
+.btn-send {
+    align-self: flex-start;
+}
+
 .nav-link {
     margin-right: 15px;
 }
@@ -340,14 +344,26 @@ input {
         justify-content: center;
         text-align: center;
         width:auto;
+        margin-right:15px;
+        margin-left:15px;
+    }
+
+    .mobile-logo {
+        display:flex;
+        justify-content: center;
+        font-size:32px;
+        flex-basis:100%;
+        margin-bottom:15px;
+    }
+
+    .mobile-nav {
+        display:flex;
+        justify-content: space-between;
+        flex-basis:100%;
     }
 
     .mobile-flex-basis-75 {
         flex-basis:75%;
-    }
-
-    .mobile-flex-basis-100 {
-        flex-basis:100%;
     }
 
     .mobile-grow {
@@ -358,13 +374,16 @@ input {
         flex-direction: column-reverse;
     }
 
-    .mobile-flex-space-between {
-        display:flex;
-        justify-content: space-between;
-    }
-
     .mobile-margin-bottom-15 {
         margin-bottom: 15px;
+    }
+
+    .mobile-height-115 {
+        height:115px;
+    }
+
+    .btn-send {
+        align-self: flex-end; 
     }
 }
 
